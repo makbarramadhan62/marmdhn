@@ -8,11 +8,9 @@ const AnimatedTypingText = () => {
       sequence={[
         "Front End Developer",
         2000,
-        "UI/UX Designer",
+        "Back End Developer",
         2000,
-        "Designer",
-        2000,
-        "Video Editor",
+        "Mobile Developer",
         2000,
         () => {},
       ]}
