@@ -11,20 +11,11 @@ import {
   FaImage,
   FaInstagram,
   FaLinkedin,
-  FaPython,
 } from "react-icons/fa6";
 import Link from "next/link";
-import { TbBrandNextjs } from "react-icons/tb";
-import {
-  SiAdobeaftereffects,
-  SiAdobepremierepro,
-  SiNuxtdotjs,
-} from "react-icons/si";
-import { RiFlutterFill, RiTailwindCssFill } from "react-icons/ri";
 import MusicPlayer from "@/components/MusicPlayer";
 import AnimatedTypingText from "@/components/AnimatedTypingText";
 import ToggleDarkMode from "@/components/ToggleDarkMode";
-import { PiFigmaLogoFill } from "react-icons/pi";
 import { useState } from "react";
 
 const container = {
