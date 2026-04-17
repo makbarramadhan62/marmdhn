@@ -6,6 +6,7 @@ import AnimatedGrid from "@/components/AnimatedGrid";
 import AnimatedLogo from "@/components/AnimatedLogo";
 import {
   FaArrowRight,
+  FaCode,
   FaGithub,
   FaImage,
   FaInstagram,
@@ -68,22 +69,20 @@ export default function Home() {
           <ToggleDarkMode />
         </div>
         <div className="flex gap-4">
-          <div className="flex gap-2 justify-center bg-gray-300/50 dark:bg-gray-800/50 w-auto rounded-xl p-4 transition-all duration-200">
-            <ToggleDarkMode />
-          </div>
-          <div className="flex gap-2 justify-center bg-gray-300/50 dark:bg-gray-800/50 w-auto rounded-xl p-4 transition-all duration-200">
-            <p className="font-bold text-primary">Home</p>
-          </div>
-          <Link href="/projects">
-            <div className="flex justify-center bg-gray-300/50 dark:bg-gray-800/50 w-auto rounded-xl p-4 transition-all duration-200 hover:scale-110 hover:cursor-pointer">
-              <p className="text-gray-800 dark:text-gray-200">Projects</p>
-            </div>
-          </Link>
-          <Link href="/about">
-            <div className="flex justify-center bg-gray-300/50 dark:bg-gray-800/50 w-auto rounded-xl p-4 transition-all duration-200 hover:scale-110 hover:cursor-pointer">
-              <p className="text-gray-800 dark:text-gray-200">About</p>
-            </div>
-          </Link>
+          <ToggleDarkMode />
+          {/*<div className="flex gap-2 justify-center bg-gray-300/50 dark:bg-gray-800/50 w-auto rounded-xl p-4 transition-all duration-200">*/}
+          {/*  <p className="font-bold text-primary">Home</p>*/}
+          {/*</div>*/}
+          {/*<Link href="/projects">*/}
+          {/*  <div className="flex justify-center bg-gray-300/50 dark:bg-gray-800/50 w-auto rounded-xl p-4 transition-all duration-200 hover:scale-110 hover:cursor-pointer">*/}
+          {/*    <p className="text-gray-800 dark:text-gray-200">Projects</p>*/}
+          {/*  </div>*/}
+          {/*</Link>*/}
+          {/*<Link href="/about">*/}
+          {/*  <div className="flex justify-center bg-gray-300/50 dark:bg-gray-800/50 w-auto rounded-xl p-4 transition-all duration-200 hover:scale-110 hover:cursor-pointer">*/}
+          {/*    <p className="text-gray-800 dark:text-gray-200">About</p>*/}
+          {/*  </div>*/}
+          {/*</Link>*/}
         </div>
         <div className="fixed bottom-0 left-0 flex h-24 sm:h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
           <div className="pointer-events-none flex place-items-center gap-2 p-4 sm:p-8 lg:pointer-events-auto lg:p-0 text-gray-800 dark:text-white">
@@ -156,16 +155,16 @@ export default function Home() {
             <div className="flex flex-col justify-between h-full">
               <div className="flex flex-col justify-center h-full gap-3">
                 <span className="font-semibold text-lg text-gray-800 dark:text-gray-200">
-                  My Projects
+                  My Professional Portfolio
                 </span>
                 <p className="text-gray-800 dark:text-gray-400">
                   Preview of the projects I&apos;ve previously built.
                 </p>
               </div>
-              <Link href="/projects">
+              <Link href="https://pro.marmdhn.com/">
                 <div className="flex justify-end items-center gap-2 transition-all duration-200 font-semibold text-white mt-4 sm:mt-0">
                   <button className="bg-gray-400/75 dark:bg-gray-500 hover:bg-gray-500 dark:hover:bg-gray-400 transition-all duration-200 w-auto flex items-center justify-center gap-4 py-2 px-4 rounded-lg">
-                    Preview <FaArrowRight />
+                    Visit <FaArrowRight />
                   </button>
                 </div>
               </Link>
@@ -200,7 +199,7 @@ export default function Home() {
             <span className="text-gray-800 dark:text-gray-200 text-center">
               Currently working in
               <h1 className="font-semibold text-2xl animate-scale mt-2">
-                Telkom Foundation
+                Taiwan Mobile
               </h1>
             </span>
           </motion.div>
@@ -258,104 +257,12 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-end items-center space-x-2 gap-2 col-span-1 md:col-span-1">
               <div className="relative group">
-                <Link href="https://nextjs.org/" target="_blank">
-                  <TbBrandNextjs
-                    size={36}
-                    className="transition-all duration-200 hover:text-gray-400 hover:cursor-pointer text-gray-800 dark:text-white dark:hover:text-gray-400"
-                  />
-                </Link>
+                <FaCode
+                  size={36}
+                  className="transition-all duration-200 hover:text-gray-400 hover:cursor-pointer text-gray-800 dark:text-white dark:hover:text-gray-400"
+                />
                 <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Next.js
-                </div>
-              </div>
-
-              <div className="relative group">
-                <Link href="https://nuxt.com/" target="_blank">
-                  <SiNuxtdotjs
-                    size={36}
-                    className="transition-all duration-200 hover:text-gray-400 hover:cursor-pointer text-gray-800 dark:text-white dark:hover:text-gray-400"
-                  />
-                </Link>
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Nuxt.js
-                </div>
-              </div>
-
-              <div className="relative group">
-                <Link href="https://tailwindcss.com/" target="_blank">
-                  <RiTailwindCssFill
-                    size={36}
-                    className="transition-all duration-200 hover:text-gray-400 hover:cursor-pointer text-gray-800 dark:text-white dark:hover:text-gray-400"
-                  />
-                </Link>
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Tailwind CSS
-                </div>
-              </div>
-
-              <div className="relative group">
-                <Link href="https://flutter.dev/" target="_blank">
-                  <RiFlutterFill
-                    size={36}
-                    className="transition-all duration-200 hover:text-gray-400 hover:cursor-pointer text-gray-800 dark:text-white dark:hover:text-gray-400"
-                  />
-                </Link>
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Flutter
-                </div>
-              </div>
-
-              <div className="relative group">
-                <Link href="https://www.python.org/" target="_blank">
-                  <FaPython
-                    size={36}
-                    className="transition-all duration-200 hover:text-gray-400 hover:cursor-pointer text-gray-800 dark:text-white dark:hover:text-gray-400"
-                  />
-                </Link>
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Python
-                </div>
-              </div>
-
-              <div className="relative group">
-                <Link href="https://www.figma.com/" target="_blank">
-                  <PiFigmaLogoFill
-                    size={36}
-                    className="transition-all duration-200 hover:text-gray-400 hover:cursor-pointer text-gray-800 dark:text-white dark:hover:text-gray-400"
-                  />
-                </Link>
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Figma
-                </div>
-              </div>
-
-              <div className="relative group">
-                <Link
-                  href="https://www.adobe.com/id_id/products/premiere.html"
-                  target="_blank"
-                >
-                  <SiAdobepremierepro
-                    size={36}
-                    className="transition-all duration-200 hover:text-gray-400 hover:cursor-pointer text-gray-800 dark:text-white dark:hover:text-gray-400"
-                  />
-                </Link>
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Adobe Premiere Pro
-                </div>
-              </div>
-
-              <div className="relative group">
-                <Link
-                  href="https://www.adobe.com/id_id/products/aftereffects.html"
-                  target="_blank"
-                >
-                  <SiAdobeaftereffects
-                    size={36}
-                    className="transition-all duration-200 hover:text-gray-400 hover:cursor-pointer text-gray-800 dark:text-white dark:hover:text-gray-400"
-                  />
-                </Link>
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Adobe After Effects
+                  Code
                 </div>
               </div>
             </div>
