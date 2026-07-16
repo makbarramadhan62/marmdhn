@@ -7,7 +7,7 @@
 
 - 🤝 I’m looking for help with **Anyone**
 
-- 👨‍💻 All of my projects are available at [pro.marmdhn.com](https://www.pro.marmdhn.com/)
+- 👨‍💻 All of my projects are available at [marmdhn.byandproject.com](https://marmdhn.byandproject.com/)
 
 - 💬 Ask me about **Anything**
 
